@@ -1,0 +1,268 @@
+  @font-face {
+    font-family: 'WestGate';
+    src: url('../assets/fonts/westgate/Westgate.woff2') format('woff2'),
+        url('../assets/fonts/westgate/Westgate.woff') format('woff'),
+        url('../assets/fonts/westgate/Westgate.ttf') format('ttf');
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #333333;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    background-color: #292929;
+    height: 130px;
+  }
+
+  .menu-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-item-text-container {
+    flex : 2;
+    display: flex;
+    justify-content: center; /*Alignement horizontal*/
+    align-items: center; /*Alignement vertical*/
+  }
+
+  .menu-item-logo-container {
+    flex : 1;
+    display: flex;
+    justify-content: center; /*Alignement horizontal*/
+    align-items: center; /*Alignement vertical*/
+  }
+
+  .menu-item-main-logo-container{
+    flex : 2;
+    display: flex;
+    justify-content: center; /*Alignement horizontal*/
+    align-items: center; /*Alignement vertical*/
+  }
+
+  .menu-item-text {
+    color: white;
+    font-size: 40px;
+    font-family: 'WestGate';
+    text-decoration: none;
+  }
+
+  .menu-item-button {
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    font-size: 40px;
+    font-family: 'WestGate';
+    text-decoration: none;
+  }
+
+  .menu-item-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu-item-main-logo {
+    width : 100%;
+    height: 100%;
+  }
+
+  .grid-photo {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  
+  .photo-item {
+    padding: 0px;
+    border-color: transparent;
+  }
+  
+  .photo-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  main {
+    background-color: #333333;
+  }
+
+  .about-container {
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 30px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-title-container {
+    flex: 1;
+  }
+
+  .about-name-container {
+    flex: 1;
+  }
+
+  .about-subtitle-container {
+    flex: 1;
+  }
+
+  .about-paragraph-container {
+    flex: 1;
+  }
+
+  .about-name-container h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+  }
+
+  .about-title-container h1 {
+    color: white;
+    text-align: center;
+    font-family: WestGate;
+    font-size: 60px;
+  }
+
+  .about-subtitle-container h2 {
+    color: white;
+    text-align: center;
+    font-family: Verdana;
+  }
+
+  .about-paragraph-container p {
+    color: white;
+    text-align: center;
+    font-family: Verdana;
+    margin-bottom: 10px;
+  }
+  
+  .services-container {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-title-container {
+    flex: 2;
+  }
+
+  .services-paragraph-container {
+    flex: 1;
+  }
+
+  .services-title-container h1 {
+    color: white;
+    text-align: center;
+    font-family: WestGate;
+    font-size: 60px;
+  }
+
+  .services-paragraph-container p {
+    color: white;
+    text-align: center;
+    font-family: Verdana;
+  }
+
+
+  .contact-container {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-title-container {
+    flex: 1;
+  }
+
+  .contact-title-container h1 {
+    color: white;
+    text-align: center;
+    font-family: WestGate;
+    font-size: 60px;
+  }
+
+  .contact-paragraph-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-paragraph-logo-container img {
+    height: 50px;
+    color: transparent;
+  }
+
+  .contact-paragraph-text-container p {
+    color: white;
+    font-family: Verdana;
+    font-size: 25px;
+    margin-left: 12px;
+  }
+
+  .contact-paragraph-text-container a {
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 800px) {
+
+    #menu-item-about-container {
+      display: none;
+    }
+
+    #menu-item-services-container {
+      display: none;
+    }
+
+    .menu-item-main-logo-container{
+      flex : 3;
+    }
+
+    .about-container {
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 0px;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-photo {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-paragraph-text-container p {
+      font-size: 16px;
+    }
+  }
