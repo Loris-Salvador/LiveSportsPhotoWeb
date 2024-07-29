@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Fonction pour charger les sections depuis l'API
   async function loadSections() {
     try {
-      const response = await fetch("https://localhost:7077/api/Section"); // Remplacez par l'URL de votre API
+      const response = await fetch(
+        "https://livesportsphotoapi.onrender.com/api/Section"
+      ); // Remplacez par l'URL de votre API
       const sections = await response.json();
 
       sections.forEach((section) => {
@@ -32,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function loadAlbums(sectionId) {
     try {
       const response = await fetch(
-        `https://localhost:7077/api/section/album/${sectionId}`
+        `https://livesportsphotoapi.onrender.com/api/section/album/${sectionId}`
       );
       const albums = await response.json();
 
