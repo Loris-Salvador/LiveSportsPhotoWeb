@@ -326,16 +326,13 @@ main {
   background-color: rgb(106, 106, 106); /* Couleur de fond au survol */
 }
 
-#sections-column,
-#albums-column {
-  min-width: 200px;
-}
-
 #sections-column {
+  min-width: 200px;
   margin-right: 50px;
 }
 
 #albums-column {
+  min-width: 200px;
   margin-left: 50px;
 }
 
