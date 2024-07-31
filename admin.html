@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gestion des Sections et Albums</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="style/admin/admin.css" />
   </head>
   <body>
-    <p>YO</p>
+    <div class="container" id="resultContainer">
+      <form id="loginForm">
+        <label for="username">username:</label>
+        <input type="text" id="username" name="username" required />
 
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Valider</button>
+      </form>
+    </div>
     <script src="script/admin/admin.js"></script>
   </body>
 </html>
